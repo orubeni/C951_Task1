@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+	 <category>
+	     <!-- This pattern is called when the associated number is inputted into the chatbot -->
+        <pattern>{Number Associated with Role}</pattern>
+        <template>We think you should consider becoming a {Role associated with Inputted Number}<br />
+            Computer science degrees enable us to serve in many critical and interesting roles in both the public and private sectors.
+            <link>
+                <text> Click here to learn more about what doors a computer science degree can open.</text>
+                <url>https://www.cmich.edu/blog/all-things-higher-ed/23-careers-computer-science-degree</url>
+            </link>
+            <!-- This block creates a button. Selecting this button returns the value 'YES' to the chatbot, returning us to the career question -->
+            <button>
+                <text>Click here to explore careers in the computer science field.</text>
+                <postback>YES</postback>
+            </button>
+        </template>
+    </category>
 </aiml>
