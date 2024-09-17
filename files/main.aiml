@@ -2,22 +2,35 @@
 <aiml version="2.0">
 
 <category>
-  <pattern></pattern>
+  <pattern>*</pattern>
   <template>
-    Hello! I'm a career guidance chatbot for computer science students. I can help match your strengths and interests to potential career paths. Would you like to explore some options?
+    Hello! I'm a career guidance chatbot for computer science students. I can help match your strengths and interests to potential career paths.<br />Would you like to explore some options? (Yes/No)
   </template>
 </category>
 
 <category>
   <pattern>YES</pattern>
   <template>
-    Great! Let's start by understanding your interests. What aspect of computer science do you enjoy most?
-    1. Problem-solving and coding
-    2. Analyzing data and finding patterns  
-    3. Designing user interfaces
-    4. Working with computer networks
-    5. Developing artificial intelligence
-    Please respond with the number of your choice.
+    Great! Let's start by understanding your interests. What aspect of computer science do you enjoy most?<br />
+    1. Problem-solving and coding<br />
+    2. Analyzing data and finding patterns<br />
+    3. Designing user interfaces<br />
+    4. Working with computer networks<br />
+    9. I would like to see more aspects<br />
+    (Please respond with the number that matches your choice)
+  </template>
+</category>
+
+<category>
+  <pattern>9</pattern>
+  <template>
+    Alright! Do any of these aspects of computer science spark an interest?<br />
+    5. Developing artificial intelligence models<br />
+    6. Penetration testing and threat analysis<br />
+    7. Technical expertise and communication skills<br />
+    YES. I would like to go back to the original options<br />
+    (Please respond with the number or string that matches your choice)
+
   </template>
 </category>
 
@@ -87,16 +100,35 @@
 </category>
 
 <category>
-  <pattern>NO</pattern>
+  <pattern>6</pattern>
   <template>
-    I hope you found this information helpful! Remember, these are just a few of the many exciting career paths in computer science. Keep exploring and learning to find the best fit for you. Good luck with your future career!
+    A cybersecurity analyst is responsible for protecting an organization's computer networks and systems from cyber threats. They monitor networks for security breaches, investigate incidents, and implement security measures to prevent future attacks.
+    
+    Key skills include proficiency in network security, knowledge of various security tools, and strong analytical abilities. Analysts must stay updated on the latest threats and technologies, conduct vulnerability assessments, and develop security policies.
+    
+    Discover more about this field here: https://www.wgu.edu/blog/what-does-cybersecurity-analyst-do1808.html
+    
+    Would you like to explore another option? (Yes/No)
   </template>
 </category>
 
 <category>
-  <pattern>*</pattern>
+  <pattern>7</pattern>
   <template>
-    I'm sorry, I didn't understand that response. Please try again or say "Hello" to start over.
+    A sales engineer combines technical expertise with sales skills to sell complex products or services, typically in the technology sector. They work closely with sales teams to understand client needs and demonstrate how their company's solutions can address specific business challenges. Sales engineers conduct product demonstrations, customize technical proposals, and provide ongoing support throughout the sales process.
+  
+    Essential skills include in-depth product knowledge, strong communication abilities, and problem-solving capabilities. They often act as a bridge between the technical and business aspects of a sale, translating complex technical information into terms that highlight the value to potential customers.
+    
+    Discover more about this field here: https://www.coursera.org/articles/sales-engineer
+    
+    Would you like to explore another option? (Yes/No)
+  </template>
+</category>
+
+<category>
+  <pattern>NO</pattern>
+  <template>
+    I hope you found this information helpful!<br />Remember, these are just a few of the many exciting career paths in computer science. Keep exploring and learning to find the best fit for you. Good luck with your future career!
   </template>
 </category>
 
