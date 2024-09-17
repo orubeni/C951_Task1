@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+  <pattern></pattern>
+  <template>
+    Hello! I'm a career guidance chatbot for computer science students. I can help match your strengths and interests to potential career paths. Would you like to explore some options?
+  </template>
+</category>
+
+<category>
+  <pattern>YES</pattern>
+  <template>
+    Great! Let's start by understanding your interests. What aspect of computer science do you enjoy most?
+    1. Problem-solving and coding
+    2. Analyzing data and finding patterns  
+    3. Designing user interfaces
+    4. Working with computer networks
+    5. Developing artificial intelligence
+    Please respond with the number of your choice.
+  </template>
+</category>
+
+<category>
+  <pattern>1</pattern>
+  <template>
+    You seem to enjoy problem-solving and coding. Based on this, you might be well-suited for a career as a Software Developer.
+    
+    Software developers design, create and maintain computer programs. They work on everything from mobile apps to operating systems.
+    
+    For more information on this career path, check out: https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm
+    
+    Would you like to explore another option? (Yes/No)
+  </template>
+</category>
+
+<category>
+  <pattern>2</pattern>
+  <template>
+    Your interest in analyzing data and finding patterns suggests you might excel as a Data Scientist.
+    
+    Data scientists use statistical analysis and machine learning to interpret complex data and help organizations make better decisions.
+    
+    Learn more about this career here: https://www.bls.gov/ooh/math/data-scientists.htm
+    
+    Would you like to explore another option? (Yes/No)
+  </template>
+</category>
+
+<category>
+  <pattern>3</pattern>
+  <template>
+    With your interest in designing user interfaces, you might enjoy a career as a UX/UI Designer.
+    
+    UX/UI designers create intuitive, user-friendly interfaces for websites and applications, focusing on both aesthetics and functionality.
+    
+    Find out more about this role here: https://www.interaction-design.org/literature/topics/ux-design
+    
+    Would you like to explore another option? (Yes/No)
+  </template>
+</category>
+
+<category>
+  <pattern>4</pattern>
+  <template>
+    Your interest in computer networks suggests you might be well-suited for a career as a Network Administrator.
+    
+    Network administrators are responsible for maintaining an organization's computer networks, ensuring they run smoothly and securely.
+    
+    Learn more about this career path here: https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm
+    
+    Would you like to explore another option? (Yes/No)
+  </template>
+</category>
+
+<category>
+  <pattern>5</pattern>
+  <template>
+    Your interest in artificial intelligence could lead to an exciting career as an AI Engineer.
+    
+    AI engineers develop and implement AI and machine learning systems, working on cutting-edge technologies like natural language processing and computer vision.
+    
+    Discover more about this field here: https://www.ibm.com/topics/artificial-intelligence-engineering
+    
+    Would you like to explore another option? (Yes/No)
+  </template>
+</category>
+
+<category>
+  <pattern>NO</pattern>
+  <template>
+    I hope you found this information helpful! Remember, these are just a few of the many exciting career paths in computer science. Keep exploring and learning to find the best fit for you. Good luck with your future career!
+  </template>
+</category>
+
+<category>
+  <pattern>*</pattern>
+  <template>
+    I'm sorry, I didn't understand that response. Please try again or say "Hello" to start over.
+  </template>
+</category>
+
+</aiml>
