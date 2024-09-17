@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern></pattern>
+        <template>
+            Hello! My name is nightowl and I am a computer science career advice chatbot.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Hello! Would you like some career advice for computer science roles? (Yes/No)</template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <template>Great! Let's start by understanding your interests. What do you enjoy most about computer science?
+        1. Writing code and solving problems
+        2. Analyzing data and finding patterns
+        3. Securing systems and networks
+        4. Working with cloud technologies
+        5. Developing artificial intelligence
+        Please respond with the number of your choice.</template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>Alright, no problem. If you change your mind, just say "Hello" to start over.</template>
+    </category>
+
+    <category>
+        <pattern>1</pattern>
+        <template>
+            <think><set name="interest">coding</set></think>
+            Excellent! You seem to enjoy coding. Now, do you prefer working on:
+            A) Front-end user interfaces
+            B) Back-end systems and databases
+            Please respond with A or B.
+        </template>
+    </category>
+
+    <category>
+        <pattern>2</pattern>
+        <template>
+            <think><set name="interest">data</set></think>
+            Based on your interest in data analysis, I would recommend a career as a Data Scientist. Data Scientists analyze complex data sets to help organizations make better decisions. You'll use statistical analysis, machine learning, and programming skills to extract insights from data.
+        </template>
+    </category>
+
+    <category>
+        <pattern>3</pattern>
+        <template>
+            <think><set name="interest">security</set></think>
+            Given your interest in security, I recommend a career as a Cybersecurity Analyst. In this role, you'll protect computer networks from threats and breaches. You'll need to stay up-to-date with the latest security trends, implement security measures, and respond to incidents.
+        </template>
+    </category>
+
+    <category>
+        <pattern>4</pattern>
+        <template>
+            <think><set name="interest">cloud</set></think>
+            With your interest in cloud technologies, a career as a Cloud Solutions Architect could be perfect for you. You'll design and implement cloud infrastructure for businesses, working with various cloud platforms and needing strong problem-solving skills.
+        </template>
+    </category>
+
+    <category>
+        <pattern>5</pattern>
+        <template>
+            <think><set name="interest">AI</set></think>
+            Your interest in AI suggests you might excel as an AI Engineer. In this role, you'll work on cutting-edge technologies like natural language processing, computer vision, and robotics. Strong math and programming skills are essential, as well as knowledge of machine learning algorithms.
+        </template>
+    </category>
+
+    <category>
+        <pattern>A</pattern>
+        <that>PLEASE RESPOND WITH A OR B</that>
+        <template>Based on your interest in coding and preference for front-end work, I recommend a career as a Front-End Software Engineer. You'll design and implement user interfaces, work with technologies like HTML, CSS, and JavaScript, and focus on creating great user experiences.</template>
+    </category>
+
+    <category>
+        <pattern>B</pattern>
+        <that>PLEASE RESPOND WITH A OR B</that>
+        <template>Given your interest in coding and preference for back-end systems, I recommend a career as a Back-End Software Engineer. You'll work on server-side logic, databases, and application integration. This role involves designing APIs, optimizing performance, and ensuring data security.</template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>I'm sorry, I didn't understand that response. Please try again or say "Hello" to start over.</template>
+    </category>
+</aiml>
